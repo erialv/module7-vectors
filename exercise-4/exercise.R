@@ -20,13 +20,13 @@ n - m
 x <- seq(-5, 10, .1)
 
 # Create a vector `sin.wave` by calling the `sin()` function on each element in `x`.
-sin.wave <- c(sin(x))
+sin.wave <- sin(x)
 
 # Create a vector `cos.wave` by calling the `cos()` function on each element in `x`.
-cos.wave <- c(cos(x))
+cos.wave <- cos(x)
 
 # Create a vector `wave` by multiplying `sin.wave` and `cos.wave` together, then adding `sin.wave`
-wave <- c(sin.wave * cos.wave)
+wave <- sin.wave * cos.wave + sin.wave
 
 # Use the `plot()` function to plot your `wave`!
 plot(wave)
